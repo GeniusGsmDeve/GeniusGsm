@@ -66,7 +66,12 @@ document.addEventListener('DOMContentLoaded', function(){
     local = json.local
     const domain = addrEl && addrEl.textContent && addrEl.textContent.includes('@') ? addrEl.textContent.split('@')[1] : (address && address.split('@')[1])
     const newAddr = `${local}@${domain}`
+    // update inbox address element
     if(addrEl) addrEl.textContent = newAddr
+    // also update index page address element if present so copy there is in-sync
+    const currentIndexEl = document.getElementById('current-address')
+    if(currentIndexEl) currentIndexEl.textContent = newAddr
+    // keep local JS state in-sync
     address = newAddr
     // update browser URL to reflect current inbox without full reload
     try{ window.history.replaceState(null, '', `/inbox/${local}/`) }catch(e){}
