@@ -7,3 +7,10 @@ __pycache__/
 .DS_Store
 node_modules/
 venv/
+lib/
+lib64/
+pyvenv.cfg
+src/staticfiles/
+*.egg-info/
+dist/
+build/
