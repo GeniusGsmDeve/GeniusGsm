@@ -1,0 +1,13 @@
+[Unit]
+Description=TempMail SMTP Receiver
+After=network.target
+
+[Service]
+User=tempmail
+WorkingDirectory=/home/TempMail/tempmail/src
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/home/TempMail/tempmail/src/.env
+ExecStart=/home/TempMail/tempmail/.venv/bin/python /home/TempMail/tempmail/src/tempmail_smtp.py
+
+[Install]
+WantedBy=multi-user.target

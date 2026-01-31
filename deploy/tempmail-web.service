@@ -1,0 +1,13 @@
+[Unit]
+Description=TempMail Django Gunicorn Service
+After=network.target
+
+[Service]
+User=tempmail   # change to the system user that runs the app
+Group=www-data
+WorkingDirectory=/home/TempMail/tempmail/src
+EnvironmentFile=/home/TempMail/tempmail/src/.env
+ExecStart=/home/TempMail/tempmail/.venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/tempmail.sock tempmail.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
