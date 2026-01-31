@@ -3,6 +3,9 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from .models import EmailMessage, SiteSetting
+from django.http import JsonResponse
+from django.db import IntegrityError
+from .forms import CustomAliasForm
 
 
 def index(request):
@@ -128,6 +131,46 @@ def generate_api(request):
         # don't fail generation if tracking fails
         pass
     return JsonResponse({'local': local})
+
+
+def create_alias(request):
+    """Create a custom local part (POST). Returns JSON on AJAX, otherwise redirects to inbox."""
+    if request.method != 'POST':
+        from django.http import HttpResponseNotAllowed
+        return HttpResponseNotAllowed(['POST'])
+
+    form = CustomAliasForm(request.POST)
+    if not form.is_valid():
+        # if AJAX, return errors as JSON
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            return JsonResponse({'errors': form.errors}, status=400)
+        # otherwise re-render index with errors
+        domain = settings.ALLOWED_HOSTS[0] if settings.ALLOWED_HOSTS else 'mail.geniusgsm.com'
+        current_local = request.session.get('tempmail_local')
+        address = f"{current_local}@{domain}" if current_local else None
+        logo = SiteSetting.objects.filter(key='logo_svg').values_list('value', flat=True).first() if SiteSetting else None
+        site_name = SiteSetting.objects.filter(key='site_name').values_list('value', flat=True).first() if SiteSetting else None
+        return render(request, 'mailreceiver/index.html', {'domain': domain, 'address': address, 'local': current_local, 'form': form, 'site_logo_svg': logo, 'site_name': site_name})
+
+    local = form.cleaned_data['local']
+    domain = settings.ALLOWED_HOSTS[0] if settings.ALLOWED_HOSTS else 'mail.geniusgsm.com'
+    try:
+        from .models import GeneratedAddress
+        ip = request.META.get('REMOTE_ADDR') or request.META.get('HTTP_X_REAL_IP') or ''
+        ua = request.META.get('HTTP_USER_AGENT', '')[:1024]
+        GeneratedAddress.objects.create(local_part=local, domain=domain, source_ip=ip, user_agent=ua)
+    except IntegrityError:
+        # already exists - ignore
+        pass
+    except Exception:
+        pass
+
+    request.session['tempmail_local'] = local
+
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        return JsonResponse({'local': local, 'address': f"{local}@{domain}"})
+
+    return redirect('mailreceiver:inbox', local=local)
 
 
 def message_detail(request, pk):
