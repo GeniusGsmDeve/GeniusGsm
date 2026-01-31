@@ -1,0 +1,30 @@
+=== Trying mail.geniusgsm.com:587...
+=== Connected to mail.geniusgsm.com.
+<-  220 tempmail.internal.cloudapp.net Python SMTP 1.4.6
+ -> EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net
+<-  250-tempmail.internal.cloudapp.net
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250-SMTPUTF8
+<-  250 HELP
+ -> MAIL FROM:<tester@example.com>
+<-  250 OK
+ -> RCPT TO:<abc123@mail.geniusgsm.com>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Sat, 31 Jan 2026 12:44:13 +0000
+ -> To: abc123@mail.geniusgsm.com
+ -> From: tester@example.com
+ -> Subject: 587 test
+ -> Message-Id: <20260131124413.044632@TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net>
+ -> X-Mailer: swaks v20201014.0 jetmore.org/john/code/swaks/
+ -> 
+ -> test body via 587
+ -> 
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.

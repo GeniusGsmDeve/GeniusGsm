@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GeniusGsm — {{ message.subject|default:'(no subject)' }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/mailreceiver/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        {% if site_name %}
+          <span class="brand" style="font-weight:600; font-size:16px;">{{ site_name }}</span>
+        {% else %}
+          <span class="brand">GeniusGsm</span>
+        {% endif %}
+      </a>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">{{ message.subject|default:'(no subject)' }}</h3>
+        <p class="text-muted">From: {{ message.mail_from }} — To: {{ message.mail_to }} — Received: {{ message.received_at }}</p>
+        <hr>
+        <pre class="body">{{ message.body }}</pre>
+        <a class="btn btn-link mt-3" href="{% url 'mailreceiver:inbox' local=message.mail_to.split(',')[0].split('@')[0] %}">Back to inbox</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

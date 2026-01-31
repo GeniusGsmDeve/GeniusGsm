@@ -1,0 +1,8 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f9fb;color:#222;margin:0;padding:0}
+.center{max-width:640px;margin:80px auto;padding:24px;background:#fff;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.06);text-align:center}
+.container{max-width:900px;margin:40px auto;padding:20px;background:#fff;border-radius:6px}
+.btn{background:#2c7be5;color:#fff;border:none;padding:10px 14px;border-radius:4px;cursor:pointer}
+.messages{list-style:none;padding:0}
+.messages li{padding:12px;border-bottom:1px solid #eee}
+.meta{color:#666;font-size:13px;margin-top:6px}
+.body{white-space:pre-wrap;background:#f4f6f8;padding:12px;border-radius:4px}

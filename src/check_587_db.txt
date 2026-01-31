@@ -1,0 +1,6 @@
+could not change directory to "/home/TempMail/tempmail/src": Permission denied
+ id |          mail_to          |     mail_from      | subject  |          received_at          
+----+---------------------------+--------------------+----------+-------------------------------
+  4 | abc123@mail.geniusgsm.com | tester@example.com | 587 test | 2026-01-31 12:44:13.117987+00
+(1 row)
+

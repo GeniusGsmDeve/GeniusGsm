@@ -1,0 +1,10 @@
+could not change directory to "/home/TempMail/tempmail/src": Permission denied
+ id | mail_to | mail_from | subject | generated_address_id | received_at 
+----+---------+-----------+---------+----------------------+-------------
+(0 rows)
+
+could not change directory to "/home/TempMail/tempmail/src": Permission denied
+ id | local_part | domain | message_count | created_at 
+----+------------+--------+---------------+------------
+(0 rows)
+

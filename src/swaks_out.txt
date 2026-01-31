@@ -1,0 +1,30 @@
+=== Trying 127.0.0.1:25...
+=== Connected to 127.0.0.1.
+<-  220 tempmail.internal.cloudapp.net Python SMTP 1.4.6
+ -> EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net
+<-  250-tempmail.internal.cloudapp.net
+<-  250-SIZE 33554432
+<-  250-8BITMIME
+<-  250-SMTPUTF8
+<-  250 HELP
+ -> MAIL FROM:<sender@example.com>
+<-  250 OK
+ -> RCPT TO:<test-postgres2@mail.geniusgsm.com>
+<-  250 OK
+ -> DATA
+<-  354 End data with <CR><LF>.<CR><LF>
+ -> Date: Sat, 31 Jan 2026 12:06:58 +0000
+ -> To: test-postgres2@mail.geniusgsm.com
+ -> From: sender@example.com
+ -> Subject: Postgres E2E Test 2
+ -> Message-Id: <20260131120657.042764@TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net>
+ -> X-Mailer: swaks v20201014.0 jetmore.org/john/code/swaks/
+ -> 
+ -> Hello Postgres 2
+ -> 
+ -> 
+ -> .
+<-  250 Message accepted for delivery
+ -> QUIT
+<-  221 Bye
+=== Connection closed with remote host.

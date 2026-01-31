@@ -1,0 +1,200 @@
+Jan 31 10:34:05 TempMail python[33232]: ('127.0.0.1', 50892) >> b'DATA'
+Jan 31 10:34:05 TempMail python[33232]: ('127.0.0.1', 50892) >> b'QUIT'
+Jan 31 10:34:05 TempMail python[33232]: ('127.0.0.1', 50892) connection lost
+Jan 31 10:34:05 TempMail python[33232]: ('127.0.0.1', 50892) Connection lost during _handle_client()
+Jan 31 10:34:40 TempMail python[33232]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 10:34:40 TempMail python[33232]: Peer: ('127.0.0.1', 48464)
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) handling connection
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) >> b'MAIL FROM:<sender3@example.com>'
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) sender: sender3@example.com
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) >> b'RCPT TO:<test3@geniusgsm.com>'
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) recip: test3@geniusgsm.com
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) >> b'DATA'
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) >> b'QUIT'
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) connection lost
+Jan 31 10:34:40 TempMail python[33232]: ('127.0.0.1', 48464) Connection lost during _handle_client()
+Jan 31 10:35:03 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 10:35:03 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 10:35:03 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 10:37:22 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 10:37:22 TempMail python[34265]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 10:37:22 TempMail python[34265]: Peer: ('127.0.0.1', 50818)
+Jan 31 10:37:22 TempMail python[34265]: ('127.0.0.1', 50818) handling connection
+Jan 31 10:37:22 TempMail python[34265]: ('127.0.0.1', 50818) EOF received
+Jan 31 10:37:22 TempMail python[34265]: ('127.0.0.1', 50818) Connection lost during _handle_client()
+Jan 31 10:37:22 TempMail python[34265]: ('127.0.0.1', 50818) connection lost
+Jan 31 10:37:37 TempMail python[34265]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 10:37:37 TempMail python[34265]: Peer: ('127.0.0.1', 50072)
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) handling connection
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) >> b'MAIL FROM:<me@example.com>'
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) sender: me@example.com
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) >> b'RCPT TO:<sys@geniusgsm.com>'
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) recip: sys@geniusgsm.com
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) >> b'DATA'
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) >> b'QUIT'
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) connection lost
+Jan 31 10:37:37 TempMail python[34265]: ('127.0.0.1', 50072) Connection lost during _handle_client()
+Jan 31 10:44:21 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 10:44:21 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 10:44:21 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 10:44:21 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 10:44:21 TempMail python[34596]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 10:44:21 TempMail python[34596]: Peer: ('127.0.0.1', 41230)
+Jan 31 10:44:21 TempMail python[34596]: ('127.0.0.1', 41230) handling connection
+Jan 31 10:44:21 TempMail python[34596]: ('127.0.0.1', 41230) EOF received
+Jan 31 10:44:21 TempMail python[34596]: ('127.0.0.1', 41230) Connection lost during _handle_client()
+Jan 31 10:44:21 TempMail python[34596]: ('127.0.0.1', 41230) connection lost
+Jan 31 11:01:42 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 11:01:42 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 11:01:42 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 11:01:42 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 11:01:43 TempMail python[35890]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 11:01:43 TempMail python[35890]: Peer: ('127.0.0.1', 51762)
+Jan 31 11:01:43 TempMail python[35890]: ('127.0.0.1', 51762) handling connection
+Jan 31 11:01:43 TempMail python[35890]: ('127.0.0.1', 51762) EOF received
+Jan 31 11:01:43 TempMail python[35890]: ('127.0.0.1', 51762) Connection lost during _handle_client()
+Jan 31 11:01:43 TempMail python[35890]: ('127.0.0.1', 51762) connection lost
+Jan 31 11:54:40 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 11:54:40 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 11:54:40 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 11:54:40 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 11:54:40 TempMail python[40817]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 11:54:40 TempMail python[40817]: Peer: ('127.0.0.1', 36956)
+Jan 31 11:54:40 TempMail python[40817]: ('127.0.0.1', 36956) handling connection
+Jan 31 11:54:40 TempMail python[40817]: ('127.0.0.1', 36956) EOF received
+Jan 31 11:54:40 TempMail python[40817]: ('127.0.0.1', 36956) Connection lost during _handle_client()
+Jan 31 11:54:40 TempMail python[40817]: ('127.0.0.1', 36956) connection lost
+Jan 31 11:54:49 TempMail python[40817]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 11:54:49 TempMail python[40817]: Peer: ('127.0.0.1', 45562)
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) handling connection
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) >> b'MAIL FROM:<test@example.com>'
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) sender: test@example.com
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) >> b'RCPT TO:<56057002@mail.geniusgsm.com>'
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) recip: 56057002@mail.geniusgsm.com
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) >> b'DATA'
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) >> b'QUIT'
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) connection lost
+Jan 31 11:54:49 TempMail python[40817]: ('127.0.0.1', 45562) Connection lost during _handle_client()
+Jan 31 11:55:24 TempMail python[40817]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 11:55:24 TempMail python[40817]: Peer: ('127.0.0.1', 41526)
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) handling connection
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) >> b'MAIL FROM:<tester@example.com>'
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) sender: tester@example.com
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) >> b'RCPT TO:<56057002@mail.geniusgsm.com>'
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) recip: 56057002@mail.geniusgsm.com
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) >> b'DATA'
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) >> b'QUIT'
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) connection lost
+Jan 31 11:55:24 TempMail python[40817]: ('127.0.0.1', 41526) Connection lost during _handle_client()
+Jan 31 11:57:45 TempMail python[40817]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 11:57:45 TempMail python[40817]: Peer: ('127.0.0.1', 35952)
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) handling connection
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) >> b'MAIL FROM:<test@geniusgsm.com>'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) sender: test@geniusgsm.com
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) >> b'RCPT TO:<geniusgsmdeveloper@gmail.com>'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) recip: geniusgsmdeveloper@gmail.com
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) >> b'DATA'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) >> b'QUIT'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) connection lost
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35952) Connection lost during _handle_client()
+Jan 31 11:57:45 TempMail python[40817]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 11:57:45 TempMail python[40817]: Peer: ('127.0.0.1', 35956)
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) handling connection
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) >> b'MAIL FROM:<test@geniusgsm.com>'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) sender: test@geniusgsm.com
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) >> b'RCPT TO:<56057002@mail.geniusgsm.com>'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) recip: 56057002@mail.geniusgsm.com
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) >> b'DATA'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) >> b'QUIT'
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) connection lost
+Jan 31 11:57:45 TempMail python[40817]: ('127.0.0.1', 35956) Connection lost during _handle_client()
+Jan 31 12:05:06 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 12:05:06 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 12:05:06 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 12:05:06 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 12:05:06 TempMail python[42441]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:05:06 TempMail python[42441]: Peer: ('127.0.0.1', 60620)
+Jan 31 12:05:06 TempMail python[42441]: ('127.0.0.1', 60620) handling connection
+Jan 31 12:05:06 TempMail python[42441]: ('127.0.0.1', 60620) EOF received
+Jan 31 12:05:06 TempMail python[42441]: ('127.0.0.1', 60620) Connection lost during _handle_client()
+Jan 31 12:05:06 TempMail python[42441]: ('127.0.0.1', 60620) connection lost
+Jan 31 12:06:00 TempMail python[42441]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:06:00 TempMail python[42441]: Peer: ('127.0.0.1', 53582)
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) handling connection
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) >> b'MAIL FROM:<sender@example.com>'
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) sender: sender@example.com
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) >> b'RCPT TO:<test-postgres@mail.geniusgsm.com>'
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) recip: test-postgres@mail.geniusgsm.com
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) >> b'DATA'
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) >> b'QUIT'
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) connection lost
+Jan 31 12:06:00 TempMail python[42441]: ('127.0.0.1', 53582) Connection lost during _handle_client()
+Jan 31 12:06:58 TempMail python[42441]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:06:58 TempMail python[42441]: Peer: ('127.0.0.1', 44998)
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) handling connection
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) >> b'MAIL FROM:<sender@example.com>'
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) sender: sender@example.com
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) >> b'RCPT TO:<test-postgres2@mail.geniusgsm.com>'
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) recip: test-postgres2@mail.geniusgsm.com
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) >> b'DATA'
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) >> b'QUIT'
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) connection lost
+Jan 31 12:06:58 TempMail python[42441]: ('127.0.0.1', 44998) Connection lost during _handle_client()
+Jan 31 12:09:42 TempMail python[42441]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:09:42 TempMail python[42441]: Peer: ('127.0.0.1', 48744)
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) handling connection
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) >> b'MAIL FROM:<sender@example.com>'
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) sender: sender@example.com
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) >> b'RCPT TO:<temp-test@mail.geniusgsm.com>'
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) recip: temp-test@mail.geniusgsm.com
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) >> b'DATA'
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) >> b'QUIT'
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) connection lost
+Jan 31 12:09:42 TempMail python[42441]: ('127.0.0.1', 48744) Connection lost during _handle_client()
+Jan 31 12:29:27 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 12:29:27 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 12:29:27 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 12:29:27 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 12:29:28 TempMail python[43826]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:29:28 TempMail python[43826]: Peer: ('127.0.0.1', 60714)
+Jan 31 12:29:28 TempMail python[43826]: ('127.0.0.1', 60714) handling connection
+Jan 31 12:29:28 TempMail python[43826]: ('127.0.0.1', 60714) EOF received
+Jan 31 12:29:28 TempMail python[43826]: ('127.0.0.1', 60714) Connection lost during _handle_client()
+Jan 31 12:29:28 TempMail python[43826]: ('127.0.0.1', 60714) connection lost
+Jan 31 12:42:46 TempMail systemd[1]: Stopping TempMail SMTP receiver...
+Jan 31 12:42:46 TempMail systemd[1]: tempmail-smtp.service: Deactivated successfully.
+Jan 31 12:42:46 TempMail systemd[1]: Stopped TempMail SMTP receiver.
+Jan 31 12:42:46 TempMail systemd[1]: Started TempMail SMTP receiver.
+Jan 31 12:42:46 TempMail python[44504]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:42:46 TempMail python[44504]: Peer: ('127.0.0.1', 58938)
+Jan 31 12:42:46 TempMail python[44504]: ('127.0.0.1', 58938) handling connection
+Jan 31 12:42:46 TempMail python[44504]: ('127.0.0.1', 58938) EOF received
+Jan 31 12:42:46 TempMail python[44504]: ('127.0.0.1', 58938) Connection lost during _handle_client()
+Jan 31 12:42:46 TempMail python[44504]: ('127.0.0.1', 58938) connection lost
+Jan 31 12:43:27 TempMail python[44504]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:43:27 TempMail python[44504]: Peer: ('20.120.180.243', 38108)
+Jan 31 12:43:27 TempMail python[44504]: ('20.120.180.243', 38108) handling connection
+Jan 31 12:43:27 TempMail python[44504]: ('20.120.180.243', 38108) EOF received
+Jan 31 12:43:27 TempMail python[44504]: ('20.120.180.243', 38108) Connection lost during _handle_client()
+Jan 31 12:43:27 TempMail python[44504]: ('20.120.180.243', 38108) connection lost
+Jan 31 12:44:13 TempMail python[44504]: Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+Jan 31 12:44:13 TempMail python[44504]: Peer: ('20.120.180.243', 44376)
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) handling connection
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) >> b'EHLO TempMail.hsw0soja1aberimp2ujysurece.xx.internal.cloudapp.net'
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) >> b'MAIL FROM:<tester@example.com>'
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) sender: tester@example.com
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) >> b'RCPT TO:<abc123@mail.geniusgsm.com>'
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) recip: abc123@mail.geniusgsm.com
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) >> b'DATA'
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) >> b'QUIT'
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) connection lost
+Jan 31 12:44:13 TempMail python[44504]: ('20.120.180.243', 44376) Connection lost during _handle_client()

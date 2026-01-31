@@ -1,0 +1,10 @@
+Creating EmailMessage: from=me@example.com to=logtest@geniusgsm.com subj=Debug test
+Failed to save EmailMessage: You cannot call this from an async context - use a thread or sync_to_async.
+Creating EmailMessage: from=me@example.com to=logtest@geniusgsm.com subj=Debug test
+Failed to save EmailMessage: You cannot call this from an async context - use a thread or sync_to_async.
+Creating EmailMessage: from=me@example.com to=saved@geniusgsm.com subj=Save test
+Saved EmailMessage id=2
+Creating EmailMessage: from=me@example.com to=saved@geniusgsm.com subj=Save test
+Saved EmailMessage id=3
+Creating EmailMessage: from=me@example.com to=saved@geniusgsm.com subj=Save test
+Saved EmailMessage id=4
