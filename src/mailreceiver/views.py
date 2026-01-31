@@ -120,6 +120,12 @@ def generate_api(request):
     if request.method != 'POST':
         return JsonResponse({'error': 'POST required'}, status=405)
     local = uuid.uuid4().hex[:8]
+    # store in session so server-rendered pages use the new local
+    try:
+        request.session['tempmail_local'] = local
+    except Exception:
+        pass
+
     # create GeneratedAddress record for tracking
     try:
         from .models import GeneratedAddress
